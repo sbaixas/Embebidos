@@ -1,0 +1,77 @@
+<%= form_with(model: state, local: true) do |form| %>
+  <% if state.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(state.errors.count, "error") %> prohibited this state from being saved:</h2>
+
+      <ul>
+      <% state.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :temperature %>
+    <%= form.text_field :temperature %>
+  </div>
+
+  <div class="field">
+    <%= form.label :humidity %>
+    <%= form.text_field :humidity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_quality %>
+    <%= form.text_field :air_quality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :smoke %>
+    <%= form.text_field :smoke %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rgb_1 %>
+    <%= form.text_field :rgb_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rbg_2 %>
+    <%= form.text_field :rbg_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :count %>
+    <%= form.number_field :count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stepper_1 %>
+    <%= form.number_field :stepper_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stepper_2 %>
+    <%= form.number_field :stepper_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servo_1 %>
+    <%= form.number_field :servo_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servo_2 %>
+    <%= form.number_field :servo_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servo_3 %>
+    <%= form.number_field :servo_3 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

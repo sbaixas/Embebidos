@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  temperature: 1.5
+  humidity: 1.5
+  air_quality: 1.5
+  smoke: 1.5
+  rgb_1: MyString
+  rbg_2: MyString
+  count: 1
+  stepper_1: 1
+  stepper_2: 1
+  servo_1: 1
+  servo_2: 1
+  servo_3: 1
+
+two:
+  temperature: 1.5
+  humidity: 1.5
+  air_quality: 1.5
+  smoke: 1.5
+  rgb_1: MyString
+  rbg_2: MyString
+  count: 1
+  stepper_1: 1
+  stepper_2: 1
+  servo_1: 1
+  servo_2: 1
+  servo_3: 1

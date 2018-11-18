@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @state.temperature %>
+</p>
+
+<p>
+  <strong>Humidity:</strong>
+  <%= @state.humidity %>
+</p>
+
+<p>
+  <strong>Air quality:</strong>
+  <%= @state.air_quality %>
+</p>
+
+<p>
+  <strong>Smoke:</strong>
+  <%= @state.smoke %>
+</p>
+
+<p>
+  <strong>Rgb 1:</strong>
+  <%= @state.rgb_1 %>
+</p>
+
+<p>
+  <strong>Rbg 2:</strong>
+  <%= @state.rbg_2 %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @state.count %>
+</p>
+
+<p>
+  <strong>Stepper 1:</strong>
+  <%= @state.stepper_1 %>
+</p>
+
+<p>
+  <strong>Stepper 2:</strong>
+  <%= @state.stepper_2 %>
+</p>
+
+<p>
+  <strong>Servo 1:</strong>
+  <%= @state.servo_1 %>
+</p>
+
+<p>
+  <strong>Servo 2:</strong>
+  <%= @state.servo_2 %>
+</p>
+
+<p>
+  <strong>Servo 3:</strong>
+  <%= @state.servo_3 %>
+</p>
+
+<%= link_to 'Edit', edit_state_path(@state) %> |
+<%= link_to 'Back', states_path %>

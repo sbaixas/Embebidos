@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>States</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Temperature</th>
+      <th>Humidity</th>
+      <th>Air quality</th>
+      <th>Smoke</th>
+      <th>Rgb 1</th>
+      <th>Rbg 2</th>
+      <th>Count</th>
+      <th>Stepper 1</th>
+      <th>Stepper 2</th>
+      <th>Servo 1</th>
+      <th>Servo 2</th>
+      <th>Servo 3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @states.each do |state| %>
+      <tr>
+        <td><%= state.temperature %></td>
+        <td><%= state.humidity %></td>
+        <td><%= state.air_quality %></td>
+        <td><%= state.smoke %></td>
+        <td><%= state.rgb_1 %></td>
+        <td><%= state.rbg_2 %></td>
+        <td><%= state.count %></td>
+        <td><%= state.stepper_1 %></td>
+        <td><%= state.stepper_2 %></td>
+        <td><%= state.servo_1 %></td>
+        <td><%= state.servo_2 %></td>
+        <td><%= state.servo_3 %></td>
+        <td><%= link_to 'Show', state %></td>
+        <td><%= link_to 'Edit', edit_state_path(state) %></td>
+        <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New State', new_state_path %>
