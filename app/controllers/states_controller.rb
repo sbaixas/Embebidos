@@ -1,4 +1,5 @@
 class StatesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_state, only: [:show, :edit, :update, :destroy]
 
   # GET /states
