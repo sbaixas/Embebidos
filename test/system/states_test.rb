@@ -14,18 +14,18 @@ class StatesTest < ApplicationSystemTestCase
     visit states_url
     click_on "New State"
 
-    fill_in "Air Quality", with: @state.air_quality
-    fill_in "Count", with: @state.count
-    fill_in "Humidity", with: @state.humidity
-    fill_in "Rbg 2", with: @state.rbg_2
-    fill_in "Rgb 1", with: @state.rgb_1
-    fill_in "Servo 1", with: @state.servo_1
-    fill_in "Servo 2", with: @state.servo_2
-    fill_in "Servo 3", with: @state.servo_3
-    fill_in "Smoke", with: @state.smoke
-    fill_in "Stepper 1", with: @state.stepper_1
-    fill_in "Stepper 2", with: @state.stepper_2
-    fill_in "Temperature", with: @state.temperature
+    fill_in "Air", with: @state.air
+    fill_in "C", with: @state.c
+    fill_in "Hum", with: @state.hum
+    fill_in "Rbg2", with: @state.rbg2
+    fill_in "Rgb1", with: @state.rgb1
+    fill_in "S1", with: @state.s1
+    fill_in "S2", with: @state.s2
+    fill_in "S3", with: @state.s3
+    fill_in "Smk", with: @state.smk
+    fill_in "St1", with: @state.st1
+    fill_in "St2", with: @state.st2
+    fill_in "Temp", with: @state.temp
     click_on "Create State"
 
     assert_text "State was successfully created"
@@ -36,18 +36,18 @@ class StatesTest < ApplicationSystemTestCase
     visit states_url
     click_on "Edit", match: :first
 
-    fill_in "Air Quality", with: @state.air_quality
-    fill_in "Count", with: @state.count
-    fill_in "Humidity", with: @state.humidity
-    fill_in "Rbg 2", with: @state.rbg_2
-    fill_in "Rgb 1", with: @state.rgb_1
-    fill_in "Servo 1", with: @state.servo_1
-    fill_in "Servo 2", with: @state.servo_2
-    fill_in "Servo 3", with: @state.servo_3
-    fill_in "Smoke", with: @state.smoke
-    fill_in "Stepper 1", with: @state.stepper_1
-    fill_in "Stepper 2", with: @state.stepper_2
-    fill_in "Temperature", with: @state.temperature
+    fill_in "Air", with: @state.air
+    fill_in "C", with: @state.c
+    fill_in "Hum", with: @state.hum
+    fill_in "Rbg2", with: @state.rbg2
+    fill_in "Rgb1", with: @state.rgb1
+    fill_in "S1", with: @state.s1
+    fill_in "S2", with: @state.s2
+    fill_in "S3", with: @state.s3
+    fill_in "Smk", with: @state.smk
+    fill_in "St1", with: @state.st1
+    fill_in "St2", with: @state.st2
+    fill_in "Temp", with: @state.temp
     click_on "Update State"
 
     assert_text "State was successfully updated"

@@ -17,7 +17,7 @@ class StatesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create state" do
     assert_difference('State.count') do
-      post states_url, params: { state: { air_quality: @state.air_quality, count: @state.count, humidity: @state.humidity, rbg_2: @state.rbg_2, rgb_1: @state.rgb_1, servo_1: @state.servo_1, servo_2: @state.servo_2, servo_3: @state.servo_3, smoke: @state.smoke, stepper_1: @state.stepper_1, stepper_2: @state.stepper_2, temperature: @state.temperature } }
+      post states_url, params: { state: { air: @state.air, c: @state.c, hum: @state.hum, rbg2: @state.rbg2, rgb1: @state.rgb1, s1: @state.s1, s2: @state.s2, s3: @state.s3, smk: @state.smk, st1: @state.st1, st2: @state.st2, temp: @state.temp } }
     end
 
     assert_redirected_to state_url(State.last)
@@ -34,7 +34,7 @@ class StatesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update state" do
-    patch state_url(@state), params: { state: { air_quality: @state.air_quality, count: @state.count, humidity: @state.humidity, rbg_2: @state.rbg_2, rgb_1: @state.rgb_1, servo_1: @state.servo_1, servo_2: @state.servo_2, servo_3: @state.servo_3, smoke: @state.smoke, stepper_1: @state.stepper_1, stepper_2: @state.stepper_2, temperature: @state.temperature } }
+    patch state_url(@state), params: { state: { air: @state.air, c: @state.c, hum: @state.hum, rbg2: @state.rbg2, rgb1: @state.rgb1, s1: @state.s1, s2: @state.s2, s3: @state.s3, smk: @state.smk, st1: @state.st1, st2: @state.st2, temp: @state.temp } }
     assert_redirected_to state_url(@state)
   end
 

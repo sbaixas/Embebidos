@@ -5,18 +5,18 @@
 <table>
   <thead>
     <tr>
-      <th>Temperature</th>
-      <th>Humidity</th>
-      <th>Air quality</th>
-      <th>Smoke</th>
-      <th>Rgb 1</th>
-      <th>Rbg 2</th>
-      <th>Count</th>
-      <th>Stepper 1</th>
-      <th>Stepper 2</th>
-      <th>Servo 1</th>
-      <th>Servo 2</th>
-      <th>Servo 3</th>
+      <th>Temp</th>
+      <th>Hum</th>
+      <th>Air</th>
+      <th>Smk</th>
+      <th>Rgb1</th>
+      <th>Rbg2</th>
+      <th>C</th>
+      <th>St1</th>
+      <th>St2</th>
+      <th>S1</th>
+      <th>S2</th>
+      <th>S3</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,18 +24,18 @@
   <tbody>
     <% @states.each do |state| %>
       <tr>
-        <td><%= state.temperature %></td>
-        <td><%= state.humidity %></td>
-        <td><%= state.air_quality %></td>
-        <td><%= state.smoke %></td>
-        <td><%= state.rgb_1 %></td>
-        <td><%= state.rbg_2 %></td>
-        <td><%= state.count %></td>
-        <td><%= state.stepper_1 %></td>
-        <td><%= state.stepper_2 %></td>
-        <td><%= state.servo_1 %></td>
-        <td><%= state.servo_2 %></td>
-        <td><%= state.servo_3 %></td>
+        <td><%= state.temp %></td>
+        <td><%= state.hum %></td>
+        <td><%= state.air %></td>
+        <td><%= state.smk %></td>
+        <td><%= state.rgb1 %></td>
+        <td><%= state.rbg2 %></td>
+        <td><%= state.c %></td>
+        <td><%= state.st1 %></td>
+        <td><%= state.st2 %></td>
+        <td><%= state.s1 %></td>
+        <td><%= state.s2 %></td>
+        <td><%= state.s3 %></td>
         <td><%= link_to 'Show', state %></td>
         <td><%= link_to 'Edit', edit_state_path(state) %></td>
         <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>

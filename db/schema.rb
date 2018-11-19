@@ -10,24 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_18_220409) do
+ActiveRecord::Schema.define(version: 2018_11_19_044654) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "states", force: :cascade do |t|
-    t.float "temperature"
-    t.float "humidity"
-    t.float "air_quality"
-    t.float "smoke"
-    t.string "rgb_1"
-    t.string "rbg_2"
-    t.integer "count"
-    t.integer "stepper_1"
-    t.integer "stepper_2"
-    t.integer "servo_1"
-    t.integer "servo_2"
-    t.integer "servo_3"
+    t.float "temp"
+    t.float "hum"
+    t.float "air"
+    t.float "smk"
+    t.string "rgb1"
+    t.string "rbg2"
+    t.integer "c"
+    t.integer "st1"
+    t.integer "st2"
+    t.integer "s1"
+    t.integer "s2"
+    t.integer "s3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

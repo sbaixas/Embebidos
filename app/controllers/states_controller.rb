@@ -1,5 +1,4 @@
 class StatesController < ApplicationController
-  skip_before_action :verify_authenticity_token
   before_action :set_state, only: [:show, :edit, :update, :destroy]
 
   # GET /states
@@ -70,6 +69,6 @@ class StatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def state_params
-      params.require(:state).permit(:temperature, :humidity, :air_quality, :smoke, :rgb_1, :rbg_2, :count, :stepper_1, :stepper_2, :servo_1, :servo_2, :servo_3)
+      params.require(:state).permit(:temp, :hum, :air, :smk, :rgb1, :rbg2, :c, :st1, :st2, :s1, :s2, :s3)
     end
 end
