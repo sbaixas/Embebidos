@@ -1,0 +1,23 @@
+<br>
+<h1 class="text-center">Gráficos</h1>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <h4 class="text-center">Variación de temperatura</h4>
+    <%= line_chart State.pluck(:id, :temp), xtitle: "Lectura", ytitle:"Temperatura" %>
+  </div>
+  <div class="col-md-6">
+    <h4 class="text-center">Variación de Humedad</h4>
+    <%= line_chart State.pluck(:id, :hum), xtitle: "Lectura", ytitle:"Humedad" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h4 class="text-center">Variación de Calidad de aire</h4>
+    <%= line_chart State.pluck(:id, :air), xtitle: "Lectura", ytitle:"Calidad de aire" %>
+  </div>
+  <div class="col-md-6">
+    <h4 class="text-center">Variación de Humo</h4>
+    <%= line_chart State.pluck(:id, :smk), xtitle: "Lectura", ytitle:"Humo" %>
+  </div>
+</div>
